@@ -1,0 +1,313 @@
+
+   /* Lidworden Design  */
+
+   .gridLid
+   {
+      display: grid;
+  
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 150px 700px 20px 150px;
+      grid-template-areas:
+          "sidebar lidworden"
+          "sidebar lidworden"
+          "sidebar lidworden "
+          "footer footer";
+  }
+
+  
+  
+  
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+
+  element {
+    width: 40vw;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: orange;
+    display: block;
+    transition: 0.3s;
+
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+  #checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+
+
+.logo {
+    grid-area: logovvd;
+    align-content: center;
+
+}
+
+.logovvd {
+    margin-left: 50%;
+    width: 60px;
+
+
+}
+
+.lid {
+
+    margin: auto;
+    width: 100px;
+    grid-area: lid;
+    background-color: #33cc33;
+   
+}
+.lid a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --bg-color: #fff;
+    --second-bg-color: #323946;
+    --text-color: blue;
+    --main-color: orange;
+    --lid-color: #17B169;
+
+}
+
+
+
+
+.footer {
+    border: 1px solid transparent;
+    grid-area: footer;
+    background-color: blue;
+    white-space: nowrap;
+    padding: 2rem;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer a {
+    display: inline-block;
+    text-align: right;
+    color: white;
+    padding: 13px;
+    text-decoration: none;
+    margin-left: 3%;
+    font-size: large;
+
+}
+
+.tekst {
+    grid-area: tekst;
+}
+
+
+.doneren:hover {
+    background: orange;
+    color: white;
+    border-radius: 50px;
+    transition: 2.0s;
+}
+
+.contact:hover {
+    background: orange;
+    color: white;
+    border-radius: 50px;
+    transition: 2.0s;
+
+}
+
+.mailons:hover {
+    background: orange;
+    color: white;
+    border-radius: 50px;
+    transition: 2.0s;
+}
+
+
+.image {
+    width: 200PX;
+    height: 250PX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    section{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+   }
+   .wrapper{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+  }
+  .wrapper h2{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  .wrapper h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #4070f4;
+  }
+  .wrapper form{
+    margin-top: 30px;
+  }
+  .wrapper form .input-box{
+    height: 52px;
+    margin: 18px 0;
+  }
+  form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    /* padding: 0 15px; */
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  .input-box input:focus,
+  .input-box input:valid{
+    border-color: #4070f4;
+  }
+  form .policy{
+    display: flex;
+    align-items: center;
+  }
+  form h3{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .input-box.button input{
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #4070f4;
+    cursor: pointer;
+  }
+  .input-box.button input:hover{
+    background: #0e4bf1;
+  }
+  form .text h3{
+   color: #333;
+   width: 100%;
+   text-align: center;
+  }
+  form .text h3 a{
+    color: #4070f4;
+    text-decoration: none;
+  }
+  form .text h3 a:hover{
+    text-decoration: underline;
+  } 

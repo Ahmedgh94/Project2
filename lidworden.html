@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidworden</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="lid.css">
+
+</head>
+
+<body class="gridLid">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="stadpunten.html">standpunten</a>
+        <a href="onsleden.html">ons leden</a>
+        <a href="Contact.html">Contact</a>
+        <a href="doneren.html">doneren </a>
+    </div>
+    <input type="checkbox" id="checkbox" onclick="openNav()">
+    <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+    </label>
+
+
+    <div class="lidworden">
+
+
+        <div class="logo">
+            <img src="imgs/logo.png" alt="logo" class="logovvd">
+        </div>
+
+        <!-- <div class="lid ">
+          <a href="lidworden.html">lid Worden</a>
+      </div> -->
+   
+        <section>
+            <div id="text">
+                <h3>
+                  Doen wat nodig is. Om Nederland vrij, veilig en welvarend te houden. 
+                  Om ons land stabiel te houden, terwijl de dreiging om ons heen toeneemt. 
+                  Daar werkt de VVD iedere dag aan, als brede, liberale volkspartij.
+                   De VVD verbindt Nederland, met steun van alle lagen van de bevolking zorgen wij voor een stabiel politiek klimaat. 
+                   Om dit te kunnen blijven doen, is het noodzakelijk dat er ook de komende jaren een sterke VVD staat. 
+                   En daar kan jij bij helpen. Dus word lid!
+                </h3>
+            </div>
+    
+            <div class="wrapper"  >
+                <form action="#" methode="Post">
+                    <div class="input-box">
+                      <input type="text" placeholder="Naam" id="Naam" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Emailadres" id="mail" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Straat en Huisnummer " id="adres" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Postcode" id="pcode" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="password" placeholder="Wachtwoord" id="Wachtwoord" required>
+                    </div>
+                    <div class="input-box">
+                      <input type="Nummer" placeholder="Uw telefoon nummer" id="nummer" required>
+                    </div>
+                    <div class="policy">
+                      <input type="checkbox">
+                      <h3>I accept all terms & condition</h3>
+                    </div>
+                    <div class="input-box button">
+                      <input type="Submit" value="Register Now">
+                    </div>
+                    <div class="text">
+                      <h3>Already have an account? <a href="#">Login now</a></h3>
+                    </div>
+                  </form>
+            </div> 
+        </section>
+        
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="footer">
+
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+
+        <a class="doneren" href="doneren.html">doneren</a>
+        <a class="contact" href="contact.html">contact</a>
+        <a class="mailons" href="mailto:email@example.com,info@fluitendefietser.nl">mailons</a>
+
+        <p class="info">
+            VVD Algemeen Secretarlaat
+            2514 HD Den Haag
+            Tel: 067762993888
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
